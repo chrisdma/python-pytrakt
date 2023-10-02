@@ -1,8 +1,8 @@
 PyTrakt
 =======
 
-.. image:: https://github.com/glensc/python-pytrakt/actions/workflows/test.yml/badge.svg
-    :target: https://github.com/glensc/python-pytrakt/actions
+.. image:: https://github.com/chrisdma/python-pytrakt/actions/workflows/test.yml/badge.svg
+    :target: https://github.com/chrisdma/python-pytrakt/actions
     :alt: CI Status
 
 .. image:: https://img.shields.io/pypi/dm/pytrakt.svg
@@ -31,23 +31,23 @@ Install Via Pip
 ^^^^^^^^^^^^^^^
 To install with `pip <http://www.pip-installer.org/>`_, just run this in your terminal::
 
-    $ pip install pytrakt
+    $ pip install pytraktcdm
 
 Get the code
 ^^^^^^^^^^^^
-trakt is available on `GitHub <https://github.com/glensc/python-pytrakt>`_.
+trakt is available on `GitHub <https://github.com/chrisdma/python-pytrakt>`_.
 
 You can either clone the public repository::
 
-    $ git clone git://github.com/glensc/python-pytrakt.git
+    $ git clone git://github.com/chrisdma/python-pytrakt.git
 
-Download the `tarball <https://github.com/glensc/python-pytrakt/tarball/main>`_::
+Download the `tarball <https://github.com/chrisdma/python-pytrakt/tarball/main>`_::
 
-    $ curl -OL https://github.com/glensc/python-pytrakt/tarball/main
+    $ curl -OL https://github.com/chrisdma/python-pytrakt/tarball/main
 
-Or, download the `zipball <https://github.com/glensc/python-pytrakt/zipball/main>`_::
+Or, download the `zipball <https://github.com/chrisdma/python-pytrakt/zipball/main>`_::
 
-    $ curl -OL https://github.com/glensc/python-pytrakt/zipball/main
+    $ curl -OL https://github.com/chrisdma/python-pytrakt/zipball/main
 
 Once you have a copy of the source, you can embed it in your Python package,
 or install it into your site-packages easily::
@@ -59,7 +59,7 @@ Contributing
 Pull requests are graciously accepted. Any pull request should not break any tests
 and should pass `flake8` style checks (unless otherwise warranted). Additionally
 the user opening the Pull Request should ensure that their username and a link to
-their GitHub page appears in `CONTRIBUTORS.md <https://github.com/glensc/python-pytrakt/blob/main/CONTRIBUTORS.md>`_.
+their GitHub page appears in `CONTRIBUTORS.md <https://github.com/chrisdma/python-pytrakt/blob/main/CONTRIBUTORS.md>`_.
 
 
 TODO
