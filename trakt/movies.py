@@ -52,16 +52,38 @@ def genres():
     data = yield 'genres/movies'
     yield [Genre(g['name'], g['slug']) for g in data]
 
+@get
+def popular_movies(page=1, limit=10, extended=None):
+    uri = 'movies/popular?page={page}&limit={limit}'.format(
+        page=page, limit=limit
+    )
+    if extended:
+        uri += '&extended={extended}'.format(extended=extended)
+
+    data = yield uri
+    yield [Movie(**movie) for movie in data]
 
 @get
-def trending_movies():
+def trending_movies(page=1, limit=10, extended=None):
     """All :class:`Movie`'s being watched right now"""
-    data = yield '/movies/trending'
-    to_ret = []
-    for movie in data:
-        watchers = movie.pop('watchers')
-        to_ret.append(Movie(watchers=watchers, **movie.pop('movie')))
-    yield to_ret
+    uri = 'movies/trending?page={page}&limit={limit}'.format(
+        page=page, limit=limit
+    )
+    if extended:
+        uri += '&extended={extended}'.format(extended=extended)
+
+    data = yield uri
+    yield [Movie(**movie['movie']) for movie in data]
+
+# @get
+# def trending_movies():
+#     """All :class:`Movie`'s being watched right now"""
+#     data = yield '/movies/trending'
+#     to_ret = []
+#     for movie in data:
+#         watchers = movie.pop('watchers')
+#         to_ret.append(Movie(watchers=watchers, **movie.pop('movie')))
+#     yield to_ret
 
 
 @get
