@@ -1,11 +1,11 @@
 {
-    "movies/trending": {
+    "movies/trending?page=1&limit=10": {
         "GET": [
             {"watchers":21,"movie":{"title":"TRON: Legacy","year":2010,"ids":{"trakt":1,"slug":"tron-legacy-2010","imdb":"tt1104001","tmdb":20526}}},
             {"watchers":17,"movie":{"title":"The Dark Knight","year":2008,"ids":{"trakt":4,"slug":"the-dark-knight-2008","imdb":"tt0468569","tmdb":155}}}
         ]
     },
-    "movies/popular": {
+    "movies/popular?page=1&limit=10": {
         "GET": [
             {"title":"The Dark Knight","year":2008,"ids":{"trakt":16,"slug":"the-dark-knight-2008","imdb":"tt0468569","tmdb":155}},
             {"title":"Fight Club","year":1999,"ids":{"trakt":727,"slug":"fight-club-1999","imdb":"tt0137523","tmdb":550}},
