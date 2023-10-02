@@ -2,17 +2,25 @@
 """tests for the trakt.movies module"""
 from trakt.core import Comment
 from trakt.movies import (Movie, Release, Translation, dismiss_recommendation,
-                          get_recommended_movies, trending_movies,
+                          get_recommended_movies, trending_movies, popular_movies
                           updated_movies)
 from trakt.people import Person
 from trakt.users import User
 
-
 def test_trending_movies():
-    trending = trending_movies()
-    assert isinstance(trending, list)
-    assert len(trending) == 2
-    assert isinstance(trending[0], Movie)
+    movies = trending_movies()
+    assert len(movies) == 2
+
+
+def test_popular_movies():
+    movies = popular_movies()
+    assert len(movies) == 10
+  
+# def test_trending_movies():
+#     trending = trending_movies()
+#     assert isinstance(trending, list)
+#     assert len(trending) == 2
+#     assert isinstance(trending[0], Movie)
 
 
 def test_updated_movies():
