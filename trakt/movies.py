@@ -13,8 +13,8 @@ from trakt.utils import now, slugify
 
 __author__ = 'Jon Nappi'
 __all__ = ['dismiss_recommendation', 'get_recommended_movies', 'genres',
-           'trending_movies', 'updated_movies', 'Release', 'Movie',
-           'Translation']
+           'popular_movies', 'trending_movies', 'updated_movies', 'Release',
+           'Movie', 'Translation']
 
 
 # FIXME: same symbol in tv module
